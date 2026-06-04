@@ -191,6 +191,29 @@
             font-size: 0.7rem;
             opacity: 0.7;
         }
+
+        /* Estilos para el menú desplegable del Asesor */
+        .advisor-section .dropdown-menu {
+            border-radius: 20px;
+            margin-top: 5px !important;
+            padding: 10px;
+        }
+
+        .advisor-section .dropdown-item {
+            color: var(--text-dark);
+            transition: all 0.3s ease;
+            border-radius: 50px;
+        }
+
+        .advisor-section .dropdown-item:hover {
+            background-color: var(--primary-pink);
+            color: var(--white);
+        }
+
+        /* Ocultar la flecha por defecto de Bootstrap */
+        .advisor-section .dropdown-toggle::after {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -247,8 +270,33 @@
                 <span class="badge-custom">Monthly</span>
             </div>
         </div>
+<!-- Section 1: Contact an Advisor -->
+<div class="advisor-section mb-5 mt-4">
+            <h3 class="section-title">Contact an Advisor</h3>
+            <div class="d-grid mt-2">
+                <a href="tel:+15204404243" class="btn-custom shadow-sm">
+                    <i class="bi bi-telephone-fill me-2"></i> Call for Instant Support
+                </a>
+            </div>
+        </div>
 
-        <div class="d-grid gap-3">
+        <!-- Section 2: Book an Appointment -->
+        <div class="booking-section mb-4">
+            <h3 class="section-title">Schedule an Appointment</h3>
+            
+            <div class="d-grid gap-3 mt-2">
+                <a href="mailto:brillosupremecleaning@gmail.com" class="btn-custom shadow-sm">
+                    <i class="bi bi-envelope-at-fill"></i> Email
+                </a>
+                <a href="sms:+15203925723" class="btn-custom shadow-sm">
+                    <i class="bi bi-chat-left-text-fill me-2"></i> Text Message
+                </a>
+                <a href="https://wa.me/15203925723?text=Hola%20quiero%20más%20información" class="btn-custom shadow-sm" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+        <!-- <div class="d-grid gap-3">
             <a href="mailto:brillosupremecleaning@gmail.com" class="btn-custom shadow-sm">
                 <i class="bi bi-envelope-at-fill"></i> Email
             </a>
@@ -258,7 +306,7 @@
             <a href="https://wa.me/15203925723?text=Hola%20quiero%20más%20información" class="btn-custom shadow-sm" target="_blank" rel="noopener noreferrer">
                 <i class="bi bi-whatsapp"></i> WhatsApp
             </a>
-        </div>
+        </div> -->
 
     </div>
 
